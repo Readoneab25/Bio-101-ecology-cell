@@ -74,12 +74,33 @@
 </div>
 <br><br><br>
   <a href="https://wa.me/+2349036795652"><button>Contact The Developer</button></a>
-    <a href="https://wa.me/+2349036795652"><button>Support Project</button></a>
+    <a href="https://wa.me/+2349036795652"><button>Support Project</button></a><br><br>
+   <button onclick="shareOnWhatsApp()">Share Quiz link via WhatsApp</button>
   <h2>Designed by Readone</h2>
   </div>
   
+
+    
+         
   <script>
       
+
+function shareOnWhatsApp() {
+            // 1. Define the message you want to share.
+            const message = "https://readoneab25.github.io/Bio-101-ecology-cell/";
+
+            // 2. Encode the message to ensure special characters (like spaces) are handled correctly.
+            const encodedMessage = encodeURIComponent(message);
+
+            // 3. Construct the WhatsApp URL.
+            // This URL opens WhatsApp and prompts the user to select a contact or status.
+            const whatsappUrl = "whatsapp://send?text=" + encodedMessage;
+
+            // 4. Open the URL.
+            window.open(whatsappUrl, '_blank');
+        }
+
+
 
 const QUESTIONS = [
   // --- Original Section 1: Characteristics of Living Things ---
